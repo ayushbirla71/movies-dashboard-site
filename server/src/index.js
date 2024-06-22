@@ -26,3 +26,5 @@ app.listen(PORT, () => {
     connectToMongoDb();
   console.log(`Server Running on port ${PORT}`);
 });
+
+module.exports = app;
