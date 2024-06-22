@@ -17,6 +17,9 @@ app.use(cors());
 app.use(express.json()); // to parse the incoming requests with JSON payloads (from req.body)
 app.use(cookieParser());
 app.use('/api/movies', movieRoutes);
+app.use((req, res) => {
+  res.status(404).send({ status: false, message: "Url not found" });
+});
 
 
 app.listen(PORT, () => {
