@@ -6,6 +6,7 @@ import MoviePage from "./pages/MoviePage/MoviePage";
 import MovieEdit from "./pages/movieEdit/MovieEdit";
 import MovieAdd from "./pages/movieAdd/MovieAdd";
 import { Toaster } from "react-hot-toast";
+import SearchPage from "./pages/searchPage/SearchPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/movie/:id" element={<MoviePage />} />
             <Route path="/movie/:id/edit" element={<MovieEdit />} />
             <Route path="/movie/:id/add" element={<MovieAdd />} />
+            <Route path="/search" element={<SearchPage/>} />
           </Routes>
           <Toaster />
         </div>
