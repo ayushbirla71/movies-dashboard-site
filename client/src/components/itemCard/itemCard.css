@@ -1,0 +1,9 @@
+#itemCartMain :hover {
+  > #itemCartPoster{
+   display: none;
+  }
+};
+
+.sibling-hover\:bg-blue-500:hover ~ .sibling {
+  @apply flex;
+}
